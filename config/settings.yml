@@ -92,10 +92,13 @@ project_form_locations:
   - Driving
 
 project_form_categories:
-  - Ongoing
-  - Internships
-  - One-Time
-  - Other
+  - Food
+  - Water
+  - Shelter
+  - Transportation
+  - Medical
+  - Mental Wellness
+  - Care
   
 project_locations:
   - name: On-Site
