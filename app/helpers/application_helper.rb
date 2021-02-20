@@ -6,7 +6,7 @@ module ApplicationHelper
   def nav_link_active_class(variant = 'DESKTOP')
     case variant
     when 'DESKTOP'
-      'inline-flex items-center px-1 pt-1 border-b-2 border-primary-600 text-sm leading-5 text-teal-500 focus:outline-none focus:border-teal-200 transition duration-150 ease-in-out ml-4 text-center font-bold'
+      'inline-flex items-center px-1 pt-1 border-b-2 border-primary-600 text-sm leading-5 text-pink-200 focus:outline-none focus:border-pink-200 transition duration-150 ease-in-out ml-4 text-center font-bold'
     when 'MOBILE'
       'mt-1 block pl-3 pr-4 py-2 border-l-4 border-primary-600 text-base text-primary-700 bg-primary-50 focus:outline-none focus:text-primary-800 focus:bg-primary-100 focus:border-primary-700 transition duration-150 ease-in-out'
     end
@@ -15,7 +15,7 @@ module ApplicationHelper
   def nav_link_inactive_class(variant = 'DESKTOP')
     case variant
     when 'DESKTOP'
-      'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 text-white hover:text-teal-500 hover:border-teal-500 focus:outline-none focus:text-teal-200 focus:border-teal-200 transition duration-150 ease-in-out ml-4 text-center'
+      'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 text-white hover:text-pink-200 hover:border-pink-200 focus:outline-none focus:text-pink-200 focus:border-pink-200 transition duration-150 ease-in-out ml-4 text-center'
     when 'MOBILE'
       'mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out'
     end
@@ -41,10 +41,6 @@ module ApplicationHelper
 
   def all_projects_nav_link_class(variant = 'DESKTOP')
     params[:controller] == 'projects' && params[:action] == 'index' ? nav_link_active_class(variant) : nav_link_inactive_class(variant)
-  end
-
-  def podcast_nav_link_class(variant = 'DESKTOP')
-    params[:controller] == 'home' && params[:action] == 'podcast' ? nav_link_active_class(variant) : nav_link_inactive_class(variant)
   end
 
   def volunteered_projects_nav_link_class(variant = 'DESKTOP')
