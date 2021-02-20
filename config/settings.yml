@@ -14,6 +14,7 @@ features_enabled:
 # These are the skills that volunteers can have and projects can request.
 volunteer_skills:
   - Baby Food
+  - Diapers
   - Non-Perishables
   - Order Food Delivery
   - Pet Food
@@ -22,14 +23,13 @@ volunteer_skills:
   - Place to sleep
   - Place to stay
   - Rides within 5 miles
-  - Rides within 5-20 miles
+  - Rides within 20 miles
   - Rides over 20 miles
   - Vitamins/ Supplements
   - OTC Medications
   - First Aid Kits
   - Wheelchair
   - Crutches
-  - Hearing Aids
   - Blankets
   - Flashlights
   - Candles
@@ -91,10 +91,12 @@ project_form_categories:
   - Food
   - Water
   - Shelter
+  - Supplies
   - Transportation
   - Medical
   - Mental Wellness
   - Care
+  - Other
   
 project_locations:
   - name: Austin Metro Area
