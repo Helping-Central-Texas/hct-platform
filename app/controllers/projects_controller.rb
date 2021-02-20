@@ -109,7 +109,7 @@ class ProjectsController < ApplicationController
     respond_to do |format|
       if @project.save
         track_event 'Project creation complete'
-        ProjectMailer.with(project: @project).new_project.deliver_now
+        # ProjectMailer.with(project: @project).new_project.deliver_now
         format.html { redirect_to @project, notice: I18n.t('project_was_successfully_created') }
         format.json { render :show, status: :created, location: @project }
       else
@@ -149,13 +149,13 @@ class ProjectsController < ApplicationController
       #byebug
       @project.volunteers.where(user: current_user).destroy_all
       flash[:notice] = I18n.t('we_ve_removed_you_from_the_list_of_volunteered_peo')
-      ProjectMailer.with(project: @project, user: current_user).cancel_volunteer.deliver_now
+      # ProjectMailer.with(project: @project, user: current_user).cancel_volunteer.deliver_now
     else
       params[:volunteer_note] ||= ''
 
       Volunteer.create(user: current_user, project: @project, note: params[:volunteer_note])
 
-      ProjectMailer.with(project: @project, user: current_user, note: params[:volunteer_note]).new_volunteer.deliver_now
+      # ProjectMailer.with(project: @project, user: current_user, note: params[:volunteer_note]).new_volunteer.deliver_now
 
       flash[:notice] = I18n.t('thanks_for_volunteering_the_project_owners_will_be')
       track_event 'User volunteered'
