@@ -7,7 +7,7 @@ site_url: https://www.helpingcentraltexas.org
 # Site features
 features_enabled:
   volunteer_directory: false
-  resources: true
+  resources: false
   office_hours: false
   success_stories: false
 
