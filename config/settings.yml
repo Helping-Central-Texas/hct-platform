@@ -99,22 +99,22 @@ project_form_categories:
 project_locations:
   - name: Austin Metro Area
     slug: austin-metro-area
-    body: Austin Metro Area
+    body: Resources in the Austin Metro Area
     color: purple
     image: austin
   - name: Houston Metro Area
     slug: houston-metro-area
-    body: Houston Metro Area
+    body: Resources in the Houston Metro Area
     color: orange
     image: houston
   - name: San Antonio Metro Area
     slug: san-antonio-metro-area
-    body: San Antonio Metro Area
+    body: Resources in the San Antonio Metro Area
     color: blue
     image: san-antonio
   - name: Dallas Metro Area
     slug: dallas-metro-area
-    body: Dallas Metro Area
+    body: Resources in the Dallas Metro Area
     color: blue
     image: dallas
 
