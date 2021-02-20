@@ -94,5 +94,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
     def after_update_path_for(resource)
       session.delete(:return_to)
+      projects_path
     end
 end
