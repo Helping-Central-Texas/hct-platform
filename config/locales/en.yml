@@ -257,7 +257,7 @@ en:
   are_you_sure_you_want_to_delete_office_hour: "Are you sure you want to delete your <span class='text-primary-600'>%{when}</span> slot?"
   you_have_accepted_oh: "<br/>You have accepted:<br/><span class='text-primary-600'>%{participant_name}</span> / <span class='text-primary-600'>%{participant_email}</span>"
   you_have_a_slot_at_when: "You have a slot at <span class='text-primary-600'>%{when}</span>."
-  project_is_looking_for: "<span class='text-primary-600'>%{project_name}</span> is looking for"
+  project_is_looking_for: "<span class='text-primary-600'>%{project_name}</span> is offering"
   skills_needed_do_not_match: "It looks like the available resource(s) do not match your requests. If you think this is incorrect, please update your profile with one of the following requests: <b>%{skills_required}</b>."
   we_re_sorry_can_you_please_add_a_description_oh: "We're sorry, can you please add a description for the OH?"
   we_re_sorry_you_can_enter_a_maximum_of_160_char: "We're sorry, you can enter a maximum of 160 characters."
