@@ -5,8 +5,8 @@
 <%= render partial: 'categories-nav' if is_projects_path %>
 
 <div class="container">
-  <%= render partial: 'location-info' if is_projects_path && ['remote', 'driving', 'on-site'].include?(params[:category_slug]) %>
-  <%= render partial: 'category-info' if is_projects_path && ['remote', 'driving', 'on-site'].exclude?(params[:category_slug]) %>
+  <%= render partial: 'location-info' if is_projects_path && ['austin-metro-area', 'houston-metro-area', 'dallas-metro-area', 'san-antonio-metro-area'].include?(params[:category_slug]) %>
+  <%= render partial: 'category-info' if is_projects_path && ['austin-metro-area', 'houston-metro-area', 'dallas-metro-area', 'san-antonio-metro-area'].exclude?(params[:category_slug]) %>
   <%= render partial: 'filters-bar' if @show_filters %>
 
   <% if @projects.present? %>

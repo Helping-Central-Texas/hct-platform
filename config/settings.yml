@@ -100,39 +100,21 @@ project_locations:
   - name: Austin Metro Area
     slug: austin-metro-area
     body: Austin Metro Area
-    project_types:
-      - Job Placement
-      - Mental Health
-      - Help Out Communities
     color: purple
     image: austin
   - name: Houston Metro Area
     slug: houston-metro-area
     body: Houston Metro Area
-    project_types:
-      - E-Learning
-      - Map Volunteers To Needs
-      - Job Placement
-      - Mental Health
-      - Help Out Communities
     color: orange
     image: houston
   - name: San Antonio Metro Area
     slug: san-antonio-metro-area
-    body: Volunteer opportunities that require a vehicle
-    project_types:
-      - Job Placement
-      - Mental Health
-      - Help Out Communities
+    body: San Antonio Metro Area
     color: blue
     image: san-antonio
   - name: Dallas Metro Area
     slug: dallas-metro-area
     body: Dallas Metro Area
-    project_types:
-      - Job Placement
-      - Mental Health
-      - Help Out Communities
     color: blue
     image: dallas
 
