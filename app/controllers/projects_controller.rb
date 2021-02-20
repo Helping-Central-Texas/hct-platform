@@ -19,21 +19,21 @@ class ProjectsController < ApplicationController
     if request.path != projects_path and params[:category_slug].present?
       @project_category = Settings.project_categories.find { |category| category.slug == params[:category_slug] }
       @project_location = Settings.project_locations.find { |location| location.slug == params[:category_slug] }
-      #byebug
+      # byebug
       raise ActionController::RoutingError, 'Not Found' if @project_category.blank? && @project_location.blank?
 
       if @project_category.present?
         @applied_filters[:project_types] = @project_category[:project_types]
         @featured_projects = Rails.cache.read "project_category_#{@project_category[:name].downcase}_featured_projects"
         @projects = @projects.tagged_with(params[:category_slug], any: true, on: :categories) if params[:category_slug].present?
-        #byebug
+        # byebug
       end
 
       if @project_location.present?
         @applied_filters[:project_types] = @project_location[:project_types]
         @featured_projects = Rails.cache.read "project_category_#{@project_location[:name].downcase}_featured_projects"
-        @projects = @projects.tagged_with(params[:category_slug], any: true, on: :locations) if params[:category_slug].present?
-        #byebug
+        @projects = @projects.tagged_with(@project_location.name, any: true, on: :locations) if params[:category_slug].present?
+        # byebug
       end
     
     else

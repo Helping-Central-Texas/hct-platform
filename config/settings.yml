@@ -82,9 +82,10 @@ organization_statuses:
 max_volunteers_for_highlight_offer: 30
 
 project_form_locations:
-  - On-Site
-  - Remote
-  - Driving
+  - Austin Metro Area
+  - Houston Metro Area
+  - San Antonio Metro Area
+  - Dallas Metro Area
 
 project_form_categories:
   - Food
@@ -96,18 +97,18 @@ project_form_categories:
   - Care
   
 project_locations:
-  - name: On-Site
-    slug: on-site
-    body: In-person volunteer opportunities
+  - name: Austin Metro Area
+    slug: austin-metro-area
+    body: Austin Metro Area
     project_types:
       - Job Placement
       - Mental Health
       - Help Out Communities
     color: purple
-    image: on-site
-  - name: Remote
-    slug: remote
-    body: Volunteer opportunities that can be performed remotely and safely from your home
+    image: austin
+  - name: Houston Metro Area
+    slug: houston-metro-area
+    body: Houston Metro Area
     project_types:
       - E-Learning
       - Map Volunteers To Needs
@@ -115,16 +116,25 @@ project_locations:
       - Mental Health
       - Help Out Communities
     color: orange
-    image: remote
-  - name: Driving
-    slug: driving
+    image: houston
+  - name: San Antonio Metro Area
+    slug: san-antonio-metro-area
     body: Volunteer opportunities that require a vehicle
     project_types:
       - Job Placement
       - Mental Health
       - Help Out Communities
     color: blue
-    image: driving
+    image: san-antonio
+  - name: Dallas Metro Area
+    slug: dallas-metro-area
+    body: Dallas Metro Area
+    project_types:
+      - Job Placement
+      - Mental Health
+      - Help Out Communities
+    color: blue
+    image: dallas
 
 project_categories:
   - name: Ongoing
