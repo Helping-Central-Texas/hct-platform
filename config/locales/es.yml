@@ -29,6 +29,8 @@ es:
   find_resources: "Encontrar Recursos"
   volunteers: "Voluntarios"
   resources: "Recursos"
+  for_providers: "Para Proveedores"
+  for_providers_caption: "Publique cualquier recurso que esté dispuesto a compartir con su comunidad local."
   office_hours: "Horas de oficina"
   success_stories: "Historias de éxito"
   discord: "Discord"
