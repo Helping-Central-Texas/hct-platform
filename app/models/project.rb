@@ -7,7 +7,7 @@ class Project < ApplicationRecord
   validates :name, presence: true
   validates :short_description, length: { maximum: 129 }
   validate :must_have_one_skill, on: :create
-  validate :date_order, on: :create
+  # validate :date_order, on: :create
 
   has_many :volunteers, dependent: :destroy
   has_many :volunteered_users, through: :volunteers, source: :user, dependent: :destroy
