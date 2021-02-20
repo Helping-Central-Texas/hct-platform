@@ -98,35 +98,17 @@ project_form_categories:
   - Other
   
 project_locations:
-  - name: On-Site
-    slug: on-site
-    body: In-person volunteer opportunities
+  <% ALL_LOCATIONS.each do |l| %>
+  - name: <%= l %>
+    slug: <%= l.gsub(' ', '-') %>
+    body: Located in <%= %>
     project_types:
       - Job Placement
       - Mental Health
       - Help Out Communities
     color: purple
     image: on-site
-  - name: Remote
-    slug: remote
-    body: Volunteer opportunities that can be performed remotely and safely from your home
-    project_types:
-      - E-Learning
-      - Map Volunteers To Needs
-      - Job Placement
-      - Mental Health
-      - Help Out Communities
-    color: orange
-    image: remote
-  - name: Driving
-    slug: driving
-    body: Volunteer opportunities that require a vehicle
-    project_types:
-      - Job Placement
-      - Mental Health
-      - Help Out Communities
-    color: blue
-    image: driving
+  <% end %>
 
 project_categories:
   - name: Ongoing
