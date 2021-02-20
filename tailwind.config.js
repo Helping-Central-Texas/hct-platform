@@ -19,7 +19,7 @@ try {
 let themeColors = {
   primary: uiColors.indigo,
   secondary: uiColors.gray,
-  pink: uiColors.pink,
+  blue: uiColors.blue,
   yellow: uiColors.yellow,
 }
 
@@ -48,8 +48,8 @@ module.exports = {
         secondary: {
           ...themeColors.secondary,
         },
-        pink: {
-          ...themeColors.pink,
+        blue: {
+          ...themeColors.blue,
         },
         yellow: {
           ...themeColors.yellow,

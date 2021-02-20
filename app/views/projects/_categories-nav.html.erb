@@ -10,6 +10,7 @@
       <span class="submenu-item <%= "submenu-item-active" if @project_location.blank? %>">
         <%= link_to t('all_locations'), projects_path %>
       </span>
+      <!---
       <span>|</span>
       <% Settings.project_categories.each do |category| %>
         <span class="submenu-item <%= "submenu-item-active" if @project_category.present? and @project_category.slug == category[:slug] %>">
@@ -20,6 +21,7 @@
       <span class="submenu-item <%= "submenu-item-active" if @project_category.blank? %>">
         <%= link_to t('all_categories'), projects_path %>
       </span>
+      --->
     </div>
   </div>
 
