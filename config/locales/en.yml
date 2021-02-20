@@ -182,7 +182,7 @@ en:
   story_was_successfully_created: "Story was successfully created."
   story_was_successfully_updated: "Story was successfully updated."
   story_was_successfully_destroyed: "Story was successfully destroyed."
-  you_got_a_new_volunteer_for_name: "You got a new volunteer for %{name}!"
+  you_got_a_new_volunteer_for_name: "You got a new request for %{name}!"
   new_office_hour_application: "New Office Hour application!"
   office_hour_slot_booked: "Office Hour slot booked!"
   name: "Name"
