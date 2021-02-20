@@ -274,7 +274,7 @@ en:
   we_re_sorry_this_project_has_indicated_no_volunteers: "We're sorry. This resource has indicated that they have all the requests they can fill at this time."
   you_re_about_to_volunteer: "You're about to request aid"
   are_you_sure_the_project_owner_will_be_alerted: "Are you sure? The resource owner will be alerted."
-  optionally_you_can_also_send_them_a_note: "Optionally, you can also send them a note on how you may contribute on one of these roles"
+  optionally_you_can_also_send_them_a_note: "Optionally, you can also send them a note."
   volunteer_note: "Volunteer note"
   in_one_sentence_why_are_you_interested: "In one sentence, why are you interested?"
   you_re_missing_skills: "You're missing requests"
