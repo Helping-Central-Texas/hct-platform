@@ -101,7 +101,7 @@ project_locations:
   <% ALL_LOCATIONS.each do |l| %>
   - name: <%= l %>
     slug: <%= l.gsub(' ', '-') %>
-    body: Located in <%= %>
+    body: Located in <%= l%>
     project_types:
       - Job Placement
       - Mental Health
