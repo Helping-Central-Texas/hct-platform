@@ -87,28 +87,56 @@ organization_statuses:
 max_volunteers_for_highlight_offer: 30
 
 project_form_locations:
-  - On-Site
-  - Remote
-  - Driving
+  - Austin Metro Area
+  - Houston Metro Area
+  - San Antonio Metro Area
+  - Dallas Metro Area
 
 project_form_categories:
   - Ongoing
   - Internships
   - One-Time
   - Other
-  
+
 project_locations:
-  <% ALL_LOCATIONS.each do |l| %>
-  - name: <%= l %>
-    slug: <%= l.gsub(' ', '-') %>
-    body: Located in <%= l%>
+  - name: Austin Metro Area
+    slug: austin-metro-area
+    body: Austin Metro Area
     project_types:
       - Job Placement
       - Mental Health
       - Help Out Communities
     color: purple
-    image: on-site
-  <% end %>
+    image: austin
+  - name: Houston Metro Area
+    slug: houston-metro-area
+    body: Houston Metro Area
+    project_types:
+      - E-Learning
+      - Map Volunteers To Needs
+      - Job Placement
+      - Mental Health
+      - Help Out Communities
+    color: orange
+    image: houston
+  - name: San Antonio Metro Area
+    slug: san-antonio-metro-area
+    body: Volunteer opportunities that require a vehicle
+    project_types:
+      - Job Placement
+      - Mental Health
+      - Help Out Communities
+    color: blue
+    image: san-antonio
+  - name: Dallas Metro Area
+    slug: dallas-metro-area
+    body: Dallas Metro Area
+    project_types:
+      - Job Placement
+      - Mental Health
+      - Help Out Communities
+    color: blue
+    image: dallas
 
 project_categories:
   - name: Ongoing
