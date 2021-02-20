@@ -43,9 +43,9 @@
       <div class="rounded-full bg-white fill-current text-primary-600 w-24 h-24 flex justify-center items-center mx-auto my-4">
         <%= inline_svg_pack_tag "media/svgs/for-volunteers.svg", class: 'text-primary-600' %>
       </div>
-      <div class="font-bold text-lg mb-4">For Volunteers</div>
-      <div class="mb-4 leading-tight">Support our community by volunteering for projects with local organizations.</div>
-      <div>See all <%= @project_count_total %> projects <%= inline_svg_pack_tag 'media/svgs/chevron-right.svg', class: 'inline-block fill-current transform transition-transform duration-100 group-hover:translate-x-1' %></div>
+      <div class="font-bold text-lg mb-4"><%= t('for_those_in_need') %></div>
+      <div class="mb-4 leading-tight"><%= t('for_those_in_need_caption') %></div>
+      <div><%= t('see_all') %> <%= @project_count_total %> <%= t('resources') %><%= inline_svg_pack_tag 'media/svgs/chevron-right.svg', class: 'inline-block fill-current transform transition-transform duration-100 group-hover:translate-x-1' %></div>
     <% end %>
     <%= link_to new_project_path, class: 'relative z-10 text-white text-center group h-full flex flex-col justify-between' do %>
       <div class="rounded-full bg-white fill-current text-primary-600 w-24 h-24 flex justify-center items-center mx-auto my-4">
