@@ -14,7 +14,7 @@ class UserMailer < ApplicationMailer
     def welcome_email
       @user = params[:user]
       # @url  = 'https://resitown.com/users/sign_in'
-      mail(to: "<#{@user.email}>", subject: "[ResiTown Sacramento: Sign Up Confirmed] Thank you for joining the ResiTown community!")
+      mail(to: "<#{@user.email}>", subject: "[HCT Sign Up Confirmed] Thank you for joining the HCT community!")
     end
   
   end

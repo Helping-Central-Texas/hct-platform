@@ -3,18 +3,18 @@ class ProjectMailer < ApplicationMailer
     @project = params[:project]
     @user = params[:user]
 
-    mail(to: "<#{@project.user.email}>", bcc: MAILER_BCC, subject: "You got a new volunteer for #{@project.name}!")
+    mail(to: "<#{@project.user.email}>", bcc: MAILER_BCC, subject: "You got a new request for #{@project.name}!")
   end
 
   def new_project
     @project = params[:project]
-    mail(to: "<#{@project.user.email}>", bcc: MAILER_BCC, subject: "You created a new opportunity: #{@project.name}!")
+    mail(to: "<#{@project.user.email}>", bcc: MAILER_BCC, subject: "You created a new resource: #{@project.name}!")
   end
 
   def cancel_volunteer
     @user = params[:user]
     @project = params[:project]
-    mail(to: "<#{@user.email}>", subject: "[ResiTown Sacramento: noreply] Your Request To Volunteer Has Been Canceled")
+    mail(to: "<#{@user.email}>", subject: "[ResiTown Sacramento: noreply] Your Request For Aid Has Been Canceled")
   end
 
   # def volunteer_outreach

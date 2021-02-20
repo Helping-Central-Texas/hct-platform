@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "ResiTown #{CITY_NAME} <info@sacconect.com>"
+  default from: "Helping Central Texas <helpingcentraltexas@gmail.com>"
   layout 'mailer'
 end
