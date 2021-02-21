@@ -3,7 +3,9 @@
 
 TEAM = {
     'Helping Central Texas Team': [
-        ['Allene Norton', 'Founder + Lead Web Developer', 'Web dev with a passion for helping local communities in need'],
+        ['Allene Norton', 'Founder + Lead Web Developer', 'Web developer with a passion for helping local communities in need'],
+        ['Matthew Maguire', 'Web Developer', 'Head of Development at Edg Design and valued Reddit volunteer'],
+        ['Andrew Owens', 'Translator', 'Works at Facebook and handles English-Spanish translations for HCT'],
     ],
     'City Help + ResiTown Sacramento Team': [
         ['Tiffany Chan', 'Founder', 'Founder of New Haven Help With Covid'],

@@ -48,7 +48,7 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = false
+  config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -65,7 +65,7 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "covid_volunteers_production"
 
   config.action_mailer.perform_caching = false
-  config.action_mailer.default_url_options = { host: 'www.helpingcentraltexas.org', protocol: 'https' }
+  config.action_mailer.default_url_options = { host: 'helpingcentraltexas.org', protocol: 'https' }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default :charset => "utf-8"
 
@@ -81,7 +81,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
       address: 'smtp.gmail.com',
       port: 587,
-      #domain: 'resitown.com',
+      domain: 'gmail.com',
       user_name: ENV['SMTP_USERNAME'],
       password: ENV['SMTP_PASSWORD'],
       authentication: :plain,
@@ -96,7 +96,7 @@ Rails.application.configure do
   #  enable_starttls_auto: true
   #}
 
-  config.action_mailer.default_url_options = { :host => 'resitown.com', protocol: 'http' }
+  config.action_mailer.default_url_options = { :host => 'helpingcentraltexas.org', protocol: 'https' }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
