@@ -207,7 +207,7 @@ en:
   old_password: "Old password"
   only_if_you_are_changing_your_password: "Only if you are changing your password."
   contact: "Contact"
-  this_information_will_be_displayed_publicly_fill_e: "This information will be displayed publicly. Fill everything out to be able to volunteer for projects."
+  this_information_will_be_displayed_publicly_fill_e: "This information will be displayed publicly. Fill everything out to be able to request aid."
   save_profile: "Save profile"
   sign_up_to_volunteer: "Request Aid"
   no_user_found_try_another_search: "No user found. Try another search!"
