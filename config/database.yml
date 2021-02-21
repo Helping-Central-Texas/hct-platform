@@ -25,7 +25,7 @@ test:
 production:
   <<: *default
   database: hct-production
-  # host     : app-2d70c9c8-eb14-44fd-92e7-2ad891f0dc27-do-user-8460486-0.b.db.ondigitalocean.com
+  host: localhost
   # port     : 25060
   # username : covid-production
   # password : ti4pf78b36459qq1
