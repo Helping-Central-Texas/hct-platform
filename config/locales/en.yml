@@ -241,7 +241,7 @@ en:
   none: "None"
   apply_filters: "Apply filters"
   no_volunteers: "No requests"
-  no_project_found_try_another_search_br_or_create: "No opportunity found. Try another search! <br> Or create an opportunity %{link_to}."
+  no_project_found_try_another_search_br_or_create: "No resources found. Try another search! <br> Or create an resource %{link_to}."
   create_new_project: "Create new project"
   project_name: "Project %{name}"
   how_to_get_in_touch: "How to get in touch"
